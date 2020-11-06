@@ -516,15 +516,27 @@ nav ul li a {
     transform: translate(10px, 7px);
 }
 
+/* INI BAGIAN BRANCH */
+#branch {
+    height: 300px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#branch ul {
+    margin-left: 40px;
+}
+
 /* INI BAGIAN SPONSOR */
 #sponsor {
     align-items: center;
     flex-direction: column;
-    margin-top: 75px;
-    padding: 25px 0;
+    /* margin-top: 75px; */
+    padding: 15px 0 25px;
 }
 
-#sponsor>h2 {
+#sponsor>h2,
+#branch>h2 {
     font-size: 20px;
     margin-top: 0;
     padding-bottom: 45px;
