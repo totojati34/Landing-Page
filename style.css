@@ -616,12 +616,18 @@ footer a:hover {
         align-items: center;
     }
 
+    #article1 .left-article {
+        order: 1;
+        margin-top: 100px;
+    }
+
     #article2 .left-article {
         order: 1;
         margin-bottom: 40px;
     }
 
-    #article2 .right-article button {
+    #article2 .right-article button,
+    #article1 .right-article button {
         width: 100%;
     }
 
