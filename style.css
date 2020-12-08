@@ -567,6 +567,13 @@ footer a:hover {
     margin-top: 0;
 }
 
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 70px !important;
+        width: 450px !important;
+    }
+}
+
 @media screen and (max-width: 756px) {
 
     main {
@@ -587,7 +594,7 @@ footer a:hover {
         top: 0;
         /* right: 0; */
         margin-top: -100%;
-        transition: .8s;
+        transition: .7s;
         z-index: -1 !important;
         transform: scale(0);
         opacity: 0;
