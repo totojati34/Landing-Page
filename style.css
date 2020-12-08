@@ -7,6 +7,7 @@
 
 body {
     font-family: 'quicksandregular';
+    overflow-x: hidden;
 }
 
 /* INI BAGIAN NAVIGASI */
@@ -56,11 +57,11 @@ header {
 
 nav {
     background: linear-gradient(rgb(0, 201, 228), rgb(4, 226, 255));
+    position: fixed;
     width: 100%;
     height: 60px;
     padding: 5px;
-    position: fixed;
-    z-index: 0;
+    z-index: 1;
 }
 
 nav .logo {
@@ -533,14 +534,14 @@ footer a:hover {
 }
 
 .hamburger-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
     top: 10px;
     width: 38px;
     height: 38px;
-    background-color: #333;
+    /* background-color: #333; */
     z-index: 2;
 }
 
@@ -548,7 +549,8 @@ footer a:hover {
     width: 100%;
     height: 3px;
     background-color: white;
-    transition: .4s;
+    border-radius: 50px;
+    transition: .6s;
 }
 
 .hamburger-menu input {
@@ -557,7 +559,12 @@ footer a:hover {
     width: 38px;
     height: 38px;
     cursor: pointer;
-    opacity: .5;
+    opacity: 0;
+    z-index: 9;
+}
+
+.click {
+    margin-top: 0;
 }
 
 @media screen and (max-width: 756px) {
@@ -566,8 +573,24 @@ footer a:hover {
         width: 90%;
     }
 
+    nav {
+        justify-content: space-around;
+    }
+
     nav ul {
-        display: none;
+        position: absolute;
+        background: linear-gradient(rgb(4, 226, 255), rgb(0, 201, 228));
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100vh;
+        width: 70%;
+        top: 0;
+        /* right: 0; */
+        margin-top: -100%;
+        transition: .8s;
+        z-index: -1 !important;
+        transform: scale(0);
+        opacity: 0;
     }
 
     .hero h1 {
@@ -603,6 +626,31 @@ footer a:hover {
 
     #items1 .cards .card {
         margin-bottom: 40px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu span:nth-child(2) {
+        transform-origin: 0;
+    }
+
+    .hamburger-menu span:last-child {
+        transform-origin: 0;
+    }
+
+    .hamburger-menu input:checked~span:nth-child(2) {
+        transform: rotate(45deg) translate(0px, -1px);
+    }
+
+    .hamburger-menu input:checked~span:nth-child(3) {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .hamburger-menu input:checked~span:last-child {
+        transform: rotate(-45deg) translate(0px, 1px);
     }
 
 }
