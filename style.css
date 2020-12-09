@@ -122,7 +122,6 @@ nav ul li a {
 }
 
 .hero a,
-.right-article .nav-link,
 .right-article .nav-link {
     display: inline-block;
     background-color: rgb(0, 170, 170);
@@ -573,9 +572,73 @@ footer a:hover {
 }
 
 @media screen and (max-width: 576px) {
+    nav {
+        justify-content: space-evenly !important;
+    }
+
+    .logo h3 {
+        display: none;
+    }
+
     .hero h1 {
-        font-size: 70px !important;
-        width: 450px !important;
+        font-size: 55px !important;
+        width: 350px !important;
+    }
+
+    .service {
+        text-align: center !important;
+    }
+
+    #article2 img {
+        width: 300px;
+    }
+
+    #article1 .right-article,
+    #article2 .right-article {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 300px;
+        text-align: center;
+        margin-left: -35px;
+    }
+
+    #article1 .right-article h2,
+    #article2 .right-article h2 {
+        width: 350px;
+        font-size: 40px;
+        margin: 0 !important;
+        line-height: 65px;
+    }
+
+    .right-article .nav-link {
+        margin-left: 30px !important;
+    }
+
+    #article1 .right-article p {
+        width: 300px;
+        margin-left: 25px !important;
+    }
+
+    #items2 .cards .card,
+    #items2 .cards .card img {
+        width: 250px !important;
+    }
+
+    #services h2,
+    #items1 h2 {
+        font-size: 40px;
+    }
+
+    #items2 .cards .card {
+        height: 365px !important;
+    }
+
+    .hamburger-menu {
+        right: 80px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
 
@@ -685,11 +748,6 @@ footer a:hover {
     #article2 .left-article {
         order: 1;
         margin-bottom: 40px;
-    }
-
-    #article2 .right-article a,
-    #article1 .right-article a {
-        width: 100%;
     }
 
     #items2 .cards .card,
