@@ -168,6 +168,9 @@ nav ul li a {
     flex-direction: column;
     padding: 30px;
     text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: .5s;
 }
 
 .service i {
@@ -196,6 +199,20 @@ nav ul li a {
 #article1 .right-article,
 #article2 .right-article {
     width: 500px;
+}
+
+#article1 .right-article,
+#article2 .right-article {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+#article1 .left-article,
+#article2 .left-article {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: .5s;
 }
 
 #article1 .right-article h2,
@@ -275,6 +292,7 @@ nav ul li a {
     width: 100%;
     padding: 50px;
     background-color: lightslategray;
+
 }
 
 #items1 .cards .card {
@@ -282,6 +300,8 @@ nav ul li a {
     width: 200px;
     height: 450px;
     overflow: hidden;
+    transform: translateY(50px);
+    opacity: 0;
     transition: .4s;
 }
 
@@ -376,6 +396,9 @@ nav ul li a {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #ccc;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: .4s;
 }
 
 #items2 .header-card img {
@@ -459,6 +482,8 @@ nav ul li a {
     flex-direction: column;
     /* margin-top: 75px; */
     padding: 15px 0 25px;
+    transition: .7s;
+    opacity: 0;
 }
 
 #sponsor>h2,
