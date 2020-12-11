@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    $("html, body").css("opacity", "1");
+    $(".hero h1, .hero a").css({
+        "opacity" : "1",
+        "transform": "translateY(0)"
+    });
+});
 $(".hamburger-menu input").click(function(){
     $("nav ul").toggleClass("click");
 });
@@ -6,9 +13,8 @@ $(".nav-link").click(function(e){
     let tujuan = $(e.target).attr("href");
 
     $("html, body").animate({
-        scrollTop: $(tujuan).offset().top - 50
-    }, 650, "easeInOutExpo");
-
+        scrollTop: $(tujuan).offset().top - 40
+    }, 850, "easeInOutExpo");
 
     e.preventDefault();
 });
