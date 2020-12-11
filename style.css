@@ -8,6 +8,8 @@
 body {
     font-family: 'quicksandregular';
     overflow-x: hidden;
+    opacity: 0;
+    transition: .6s;
 }
 
 /* INI BAGIAN NAVIGASI */
@@ -119,6 +121,9 @@ nav ul li a {
     text-align: center;
     /* background-color: tomato; */
     font-size: 90px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
 }
 
 .hero a,
@@ -136,6 +141,12 @@ nav ul li a {
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
+}
+
+.hero a {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1.5s;
 }
 
 .hero a:hover {
